@@ -116,7 +116,7 @@ if [ $# -ge 0 ] && [ $# -le 1 ]; then
         echo
 
         print_animated "$SIMARIS" "$GREEN"
-        str=": Se necessiti di ulteriori aiuti, posso darti qualche altro piccolo indizio. Nel caso in cui ti servisse, chiamami specificando il nome del dataset su cui hai difficoltà (esempio: "
+        str=": Se necessiti di ulteriori aiuti, posso darti qualche altro piccolo indizio. Nel caso in cui ti servisse, chiamami specificando il numero del dataset su cui hai difficoltà (esempio: "
         print_animated "$str" "$WHITE"
         print_animated "sh Simaris.sh 1" "$PURPLE"
         str="). Buona fortuna!"
@@ -128,6 +128,22 @@ if [ $# -ge 0 ] && [ $# -le 1 ]; then
     1)
         print_animated "$SIMARIS" "$GREEN"
         str=": Per capire cosa cercare nel primo dataset, ti consiglio di rileggere attentamente ciò che ti avevo scritto precedentemente nel mio penultimo messaggio."
+        print_animated "$str" "$WHITE"
+
+        echo
+        sleep 0.5
+        echo
+
+        print_animated "$SIMARIS" "$GREEN"
+        str=": Visto che mi sento particolarmente buono oggi, ti darò un altro piccolo aiuto..."
+        print_animated "$str" "$WHITE"
+
+        echo
+        sleep 0.3
+        echo
+
+        print_animated "$SIMARIS" "$GREEN"
+        str=": La soluzione finale che dovrai inserire sarà data dal risultato della differenza tra il risultato del grep sul primo e sul secondo dataset."
         print_animated "$str" "$WHITE"
 
         echo

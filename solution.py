@@ -8,12 +8,13 @@ def check_installation(package):
     except subprocess.CalledProcessError:
         return False
 
-package_name = "pycryptodome"
-
 warnings.filterwarnings("ignore", category=Warning)
 
-if not check_installation(package_name):
-    subprocess.run(["pip3", "install", package_name], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+if not check_installation("pycryptodome"):
+    subprocess.run(["pip3", "install", "pycryptodome"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+if not check_installation("requests"):
+    subprocess.run(["pip3", "install", "requests"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 try:
     sys.setrecursionlimit(1000000000) 
