@@ -88,7 +88,7 @@ if [ $# -ge 0 ] && [ $# -le 1 ]; then
         print_animated "grep <cosa_vuoi_cercare> <file_in_cui_vuoi_cercare> | wc -l" "$PURPLE"
         str=". Se questo non fosse sufficiente, ho anche preparato un esempio pratico che puoi utilizzare in qualsiasi momento: basta eseguire "
         print_animated "$str" "$WHITE"
-        print_animated "sh example.sh" "$PURPLE"
+        print_animated "bash example.sh" "$PURPLE"
         print_animated "." "$WHITE"
 
         echo
@@ -160,7 +160,7 @@ if [ $# -ge 0 ] && [ $# -le 1 ]; then
     *)
         echo
         echo "Errore: argomento non valido."
-        echo "Puoi chiamare Simaris solamente con: \"sh Simaris.sh\", \"sh Simaris.sh 1\" o \"sh Simaris.sh 2\""
+        echo "Puoi chiamare Simaris solamente con: \"bash Simaris.sh\", \"bash Simaris.sh 1\" o \"bash Simaris.sh 2\""
         echo
         exit 1
     ;;
@@ -169,5 +169,5 @@ if [ $# -ge 0 ] && [ $# -le 1 ]; then
 else
     echo
     echo "Errore: numero di argomenti non valido."
-    echo "Puoi chiamare Simaris solamente con: \"sh Simaris.sh\", \"sh Simaris.sh 1\" o \"sh Simaris.sh 2\""
+    echo "Puoi chiamare Simaris solamente con: \"bash Simaris.sh\", \"bash Simaris.sh 1\" o \"bash Simaris.sh 2\""
 fi
